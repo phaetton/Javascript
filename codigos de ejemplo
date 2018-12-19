@@ -1,0 +1,193 @@
+//mostrar ventana emergente
+<SCRIPT LANGUAGE="JavaScript"> 
+alert("cadena  de texto"); 
+</SCRIPT>
+
+//lectura y asignando variable
+var nom; 
+nom=prompt("Escribe tu nombre ","Paco"); 
+alert("Mucho gusto "+ nom); 
+
+/*Programa que sirve para calcular 
+ el área de un rectángulo */ 
+var base,altura; 
+base=prompt("Escribe la base del Rectángulo",""); 
+altura=prompt("Escribe la altura del Rectángulo",""); 
+alert("El área del Rectángulo es = "+(base*altura)); 
+
+ tipos de datos: 
+ String: cadenas de texto Object: objetos 
+ Number: valores numéricos Null: nulo 
+ Boolean: true o false Undefined: no definido
+ 
+ Podemos averiguar el tipo de dato que contiene una variable si utilizamos la función 
+incorporada typeof
+
+var Pepe; 
+var PEPE="Hola que tal "; 
+var pepE=75.47; 
+var pEpe=" ¿Como estás?"; 
+Pepe=PEPE+pEpe; 
+alert("PEPE="+PEPE); 
+alert("PEPE es "+typeof(PEPE)); 
+alert("pepE="+pepE); 
+alert("pepE es "+typeof(pepE)); 
+alert("pEpe="+pEpe); 
+alert("pEpe es "+typeof(pEpe)); 
+alert("Pepe="+Pepe); 
+alert("Pepe es "+typeof(Pepe));
+
+\n salto de línea 
+ \t tabulador
+ 
+ //pasar a flotante
+ parseFloat ("123.456") = 123.456 
+ parseFloat ("123ABC") = 123 
+ 
+ x = parseInt(prompt(“Escribe un número entero”,””));
+
+Operadores Lógicos y Relacionales
+>, <, <=, >= 
+== igualdad 
+!= diferente 
+&& y 
+|| o 
+! No 
+
+//condicion while
+var x=0; 
+while(x<6) 
+{ 
+alert("El valor de x es= "+x); 
+x=x+1; 
+} 
+
+//break y continue
+var salida=""; 
+for (x=5;x<15;x++) 
+ { 
+ if (x==8) break; 
+ salida=salida+x+" \n"; 
+ } 
+salida=salida+"\n\n"; 
+for (x=5;x<15;x++) 
+ { 
+ if (x==8) continue; 
+ salida=salida+x+"\t"; 
+ } 
+alert(salida); 
+
+
+//ciclo mientras
+while(i<5) 
+ { 
+ i++; 
+ num=parseInt(prompt("Escribe un entero entre 1 y 10, intento "+i,"")); 
+ if(num==x) 
+ { 
+ alert("Lo has acertado en "+i+" tentativas"); 
+ break; 
+ } 
+ } 
+ 
+ //select case
+ switch(notanum) 
+ { 
+ case 0: 
+ notacual="Muy Deficiente"; 
+ break; 
+ case 1: 
+ notacual="Muy Deficiente"; 
+ break; 
+ case 2: 
+ notacual="Deficiente"; 
+ break; 
+ case 3: 
+ notacual="Deficiente"; 
+ break; 
+ case 4: 
+ notacual="Insuficiente"; 
+ break; 
+ case 5: 
+ notacual="Suficiente"; 
+ case 6: 
+ notacual="Bien"; 
+ break; 
+ case 7: 
+ notacual="Notable"; 
+ break; 
+ case 8: 
+ notacual="Notable"; 
+ break; 
+ case 9: 
+ notacual="Excelente"; 
+ break; 
+ case 10: 
+ notacual="Matricula de Honor"; 
+ break; 
+ } 
+ 
+ //while y dowhile
+ while (x<5) 
+{ 
+x=x+1; 
+salida=salida+x+"\t"; 
+} 
+salida=salida+"\ndo while:\n"; 
+x=1; 
+do 
+{ 
+x=x+1; 
+salida=salida+x+"\t"; 
+} while (x<5); 
+
+//funciones
+mediageo(); // llama a la función y se ejecuta en este lugar
+function mediageo() 
+ { 
+ sentencia3; 
+ ...; 
+ ....; 
+ } 
+ 
+ //ejemplo con funciones y while
+ var opc="0"; 
+while (opc != "T") 
+ { 
+ opc=prompt("Escribe la letra de la opción deseada: (S) Sumar - (R) Raíz Cuadrada 
+- (L) Logaritmo Neperiano - (A) Ayuda - (T) Terminar",""); 
+ if (opc=="S") suma(); 
+ if (opc=="R") raiz(); 
+ if (opc=="L") logaritmo(); 
+ if (opc=="A") ayuda(); 
+ } 
+function suma() 
+ { 
+ var a,b; 
+ a=prompt("Escribe el primer sumando",""); 
+ a=parseFloat(a); 
+ b=prompt("Escribe el segundo sumando",""); 
+ b=parseFloat(b); 
+ alert("La suma de "+ a +" y "+ b +" es "+(a+b)); 
+ } 
+function raiz() 
+ { 
+ var a; 
+ a=prompt("Escribe el radicando ",""); 
+ a=parseFloat(a); 
+ alert("La raíz cuadrada de "+ a +" es "+Math.sqrt(a)); 
+ } 
+function logaritmo() 
+ { 
+ var x; 
+ x=prompt("Escribe un número positivo",""); 
+ x=parseFloat(x);
+ alert("El logaritmo neperiano de "+ x +" es "+Math.log(x)); 
+ } 
+function ayuda() 
+ { 
+ alert("Es bastante tonto que me pidas ayuda\npero aquí la tienes:\n\tPulsa S si 
+quieres sumar\n\tPulsa R para la raíz cuadrada\n\tPulsa L para el logaritmo 
+neperiano\n\tPulsa A para acceder a la ayuda\n\tPulsa T para acabar"); 
+ } 
+

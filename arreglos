@@ -1,0 +1,9 @@
+//arreglo unidimensional
+var x=new Array(); 
+var salida=""; 
+for(i=0;i<=10;i++) 
+{ 
+x[i]=2*i; 
+salida=salida+"x["+i+"]="+x[i]+"\t"; 
+} 
+alert(salida); 

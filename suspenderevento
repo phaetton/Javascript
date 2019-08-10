@@ -1,0 +1,5 @@
+//suspende evento click
+
+$("enlace").click(function(){
+event.PreventDefault();
+});

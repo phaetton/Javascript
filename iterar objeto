@@ -1,0 +1,10 @@
+var obj = {
+  "flammable": "inflammable",
+  "duh": "no duh"
+};
+$.each( obj, function( key, value ) {
+  alert( key + ": " + value );
+});
+la respuesta sería:
+flammable: inflammable 
+duh: no duh
